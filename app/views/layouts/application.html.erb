@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AddressBook</title>
+  <title>Address Book</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<nav>
+    <%= link_to "Home", '/' %>
+    <%= link_to "List Contacts", '/contacts' %>
+    <%= link_to "New Contact", '/contacts/new' %>
+</nav>
 <%= yield %>
 
 </body>
